@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나를 소개합니다.</title>
+    <meta charset="utf-8">
+    
+    <style>
+        h1 {
+            text-align: center;
+            border-width:5px;
+            border-color: brown;
+            border-style: solid;
+
+            padding:20px;
+            margin:20px; 
+        }
+        a {color:aqua;
+        text-decoration:overline;}
+        .korea {color:crimson;
+        text-decoration:none}
+#youtube{color:blue}
+        h2{
+            text-align: center;
+            border-width:10px;
+            border-color: purple;
+            border-style: solid;
+
+            padding:40px;
+            margin:40px; 
+        }
+
+        div {
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+
+        #gri {
+            border:5px solid pink
+        }
+
+        @media(max-width:700px) {
+            #gri {
+                display:none;
+            }
+        }
+    </style>
+
+    <scipt>
+        document.write(1+1);
+    </scipt>
+</head>
+<body>
+    <h1>나를 소개한다</h1>
+    <img src="foxx.jpeg"width="800">
+<br>
+<ol>
+    <h2>이름: 조용준</h2>
+    <h2>나이: 만17세</h2>
+    <h2>진로: 전투기 조종사</h2>
+
+    안녕하세요. 저는 조용준이에요.<a href="https://naver.com"></a>
+    저의 나이는 만 17세이고 진로는 전투기 조종사에요
+<li><a href="https://www.youtube.com/" class="korea" id="youtube">youtube</a></li>
+</ol>
+<div id="gri">
+<div>하이하이</div>
+<div>바이바이</div>
+    </div>
+    <input type="button" value="button" onclick="alert('다크모드를 실행합니다.')">
+    <input type="text" onchange= "alert('chaged')">
+
+    <input type="button" value="day" onclick="
+    if(document.querySelector('body').dataset.mode === 'night') {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style. color = 'black';
+        document.querySelector('body').dataset.mode ='day';
+
+        this.value= 'day';
+    }
+    else{
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('body').dataset.mode ='night';
+
+        this.value= 'night';
+    }
+    ">
+</body>
+
+</html>
